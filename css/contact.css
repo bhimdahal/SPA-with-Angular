@@ -1,0 +1,74 @@
+
+
+
+
+select {
+		width: 300px; height: 30px; padding: 7px;
+		display: inline-block; border: 1px solid grey;
+		border-radius: 20px; margin-bottom: 10px;}
+
+textarea {width: 400px; height: 150px; padding: 7px;
+			border: 2px solid grey;  font-size: 16px; resize: none; }
+
+input, select {
+        width: 300px;
+        height: 40px;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        border: 1px solid grey; 
+        margin-bottom: 10px;
+    }
+    select {height: 40px;}
+
+    label {
+        width: 200px;
+        float: left;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+#text {
+    margin-left: 25%;
+}
+#qs {margin-left: 40%;}
+
+ input:focus {background-color: #CED8F6;}
+
+
+#error {
+        background-color: aqua;
+        color:red;
+        font-size: 16px;
+        margin: 20px;
+    }
+
+ #wrapper{
+        width:600px;
+        margin: 0 auto;
+        font-family: helvetica;
+        font-size: 1em;
+    }
+
+ #button {
+        height: 50px;
+        margin-left: 40%;
+        width: 150px;
+        background-color: black;
+        color: white;
+        font-size: 1.0em;
+    }
+
+  /*#country {margin: 0 50% 0 30% }*/
+
+
+  #button:hover {background-color: #45a049; cursor: pointer;}
+
+  .errorField {
+    border: 1px solid red; 
+  }
+  #formH   {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 5vw;
+    }
+    

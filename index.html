@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SPA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="./dist/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="./dist/angular-min.js"></script>
+    <script src="./dist/route-min.js"></script>
+     <script src="./App/app.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="app">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand glyphicon glyphicon-apple" href="#/"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#/home">HOME</a></li>
+        <li><a href="#/gallery">GALLERY</a></li>
+        <li><a href="#/instagram">SEARCH INSTAGRAM</a></li>
+        <li><a href="#/contact">CONTACT</a></li>
+        <li><a href="#/find">FIND ME </a></li>
+
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <div ng-view>
+    
+  </div>
+  
+</div>
+
+</body>
+</html>

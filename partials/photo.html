@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+      <script src="../dist/jquery.min.js"></script>
+ 
+    <style type="text/css">
+        .imgStyle {
+            height: 100px;
+            width: 100px;
+            border: 3px solid grey;
+        }
+        #mainImage {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .selected {
+            cursor: pointer;
+            border-color: red;
+        }
+      
+    </style>
+    </head>
+<body>
+    <img  height="400px" width="720px" style="border: 3px solid grey" src="../img/1.jpg" id = "mainImage">
+    <br>
+    <br>
+    
+    <div id="imgThumb">
+        
+    </div>
+    
+    <script>
+     for (var i=1; i<28; i++){
+         var link = "../img/"+i+".jpg";
+          	var imgSrc = "<img src='" + link + "' />";
+           $("#imgThumb").append(imgSrc);
+    
+     }
+      $(document).ready(function(){
+        $("#imgThumb img").addClass("imgStyle");
+          var images = $("#imgThumb img");
+        $("#imgThumb").click(function(event){
+          var targetElement = $(event.target); 
+            if (targetElement.is("img")){
+            var newSrc = targetElement.attr("src");
+            $("#mainImage").attr("src", newSrc);
+            console.log("clicked");
+            console.log(newSrc);
+            }  
+            
+            $('#imgThumb img').mouseover(function(e) {
+            e.preventDefault(); 
+            $('#imgThumb img').removeClass('selected');
+            $(this).addClass('selected');
+        });
+          
+            
+        });
+          
+        
+              
+    });
+       
+    </script> 
+ 
+    
+    
+</body>
+  
+</html>

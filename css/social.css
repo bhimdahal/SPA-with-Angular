@@ -1,0 +1,23 @@
+#social {
+    background-color: aqua;
+    padding: 20px;
+}
+
+div  p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+div ul {
+   
+margin-left: 100px;   
+margin-right: 100px;
+}
+
+div ul li {
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="../css/contact.css">
+
+
+</head>
+<body>
+
+<p id="formH"> Please fill this form </p>
+
+
+<div id="wrapper">
+       
+<div id="error"></div>
+
+
+<form id="validationForm" name="form">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Bhim">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Dahal">
+
+    <label for="email"> Email </label>
+    <input name="email" id="email" placeholder="someone@gmail.com"/>
+
+    <label for="phone"> Phone </label>
+     <input name="phone" id="phone" placeholder="xxx-xxx-xxxx"/>
+
+     <label for="password"> Password </label>
+     <input class="password" name="password" type="password" id="password" placeholder="*******"/>
+
+      <label for="password"> Confirm Password </label>
+      <input class="password" name="password" type="password" id="confirmPassword" placeholder="*******"/>
+
+    <label for="country">Country</label> <br>
+    <select id="country" name="country" selected="">
+     <option value=""></option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+<br><br>
+    <label for="text" id="qs">Question/Suggestion</label> <br><br>
+	<textarea id="text" placeholder="some text"></textarea>
+	
+  <br>
+    <input type="submit" id="button" value="Submit">   
+  </form>
+
+</div>
+
+<script src="../dist/jquery.min.js">
+</script>
+<script  src="../App/contact.js"></script>
+
+</body>
+</html>
